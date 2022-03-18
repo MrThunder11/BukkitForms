@@ -19,14 +19,15 @@ public class moveListener implements Listener {
     @EventHandler
     public void onMove(PlayerMoveEvent e) {
         Player player = e.getPlayer();
-            if (main.getConfig().getBoolean("spawn.enabled")) {
-                BukkitTask task = main.tasks.get(player);
-                if(task != null){
-                    task.cancel();
-                    main.tasks.remove(player);
-                    player.sendMessage(main.prefix + ChatColor.DARK_RED + "" + ChatColor.BOLD + "You Moved !, Teleporting Canceled.");
-                    return;
-                }
+        if (main.getConfig().getBoolean("spawn-enabled")) {
+            BukkitTask task = main.tasks.get(player);
+            if (task != null) {
+                task.cancel();
+                main.tasks.remove(player);
+                player.sendMessage(
+                        main.prefix + ChatColor.DARK_RED + "" + ChatColor.BOLD + "You Moved !, Teleporting Canceled.");
+                return;
             }
+        }
     }
 }

@@ -1,6 +1,6 @@
 name: HeromcSpawnPlugin
 version: '${project.version}'
-main: me.asem__1425.heromcspawnplugin.HeromcSpawnPlugin
+main: me.asem__1425.heromcspawnplugin.HerocmcSpawnPlugin
 authors: [ asem__1425, MrThunder ]
 description: HeromcSpawnPlugin
 commands:
