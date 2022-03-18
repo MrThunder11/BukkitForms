@@ -21,7 +21,7 @@
 							spawn(player);
 						}
 					}
-				}.runTaskLater(this, 45);
+				}.runTaskLater(this, 45);//Every 1 seconds 
     	}
     }
     @EventHandler
