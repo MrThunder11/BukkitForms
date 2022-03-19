@@ -1,0 +1,5 @@
+name: HerocmcScoreBoard
+version: '${project.version}'
+main: me.asem__1425.herocmcscoreboard.HerocmcScoreBoard
+authors: [ asem__1425 ]
+description: HerocmcScoreBoard plugin
